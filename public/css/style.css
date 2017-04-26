@@ -1,0 +1,62 @@
+
+#main_container {
+  width: 800px;
+  margin: 0 auto;
+  /*border: 1px solid grey;*/
+  padding: 10px;
+  display: table
+}
+
+#main_container #canvas_container {
+  float: left;
+  border: 1px solid grey
+}
+
+#main_container #layers_menu {
+  float: right;
+  width: 150px;
+  /*border: 1px solid grey;*/
+  padding-bottom: 4px
+}
+
+#main_container #layers_menu button {
+  width: 90%;
+  margin: 4px auto 0 auto;
+  display: block
+}
+.button {
+  background-color: #eee;
+  border: 1px solid grey;
+  padding: 5px 20px;
+  margin: 5px;
+  display: inline-block;
+}
+#main_container #layers_menu #shapes_list_conatiner {
+  width: 90%;
+  margin: 4px auto 0 auto
+}
+
+#main_container #layers_menu #shapes_list_conatiner #shapes_list {}
+
+#main_container #layers_menu #shapes_list_conatiner #shapes_list .shape {
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  cursor: pointer;
+  background: #807970;
+  /*border-bottom: 1px solid grey*/
+}
+
+#main_container #layers_menu #shapes_list_conatiner #shapes_list .shape.active {
+  background: #908980
+}
+
+#main_container #timeline {
+  clear: both;
+  /*border: 1px solid grey;*/
+  margin-top: 10px;
+}
+
+.page-title{
+  text-align: center;
+}

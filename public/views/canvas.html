@@ -1,0 +1,21 @@
+<!-- public/views/nerd.html -->
+
+<div class="container">
+  <div class="page-title">
+    <h1>Editor</h1>
+  </div>
+
+  <div id="main_container">
+    <div id='canvas_container'><canvas id="canvas">You have a very old browser... (It does not support HTML5 canvas)</canvas></div>
+    <div id='layers_menu'>
+      <div id='shapes_list_conatiner'>
+      </div>
+      <input ng-model="text" ng-show="file" placeholder="Enter text"/>
+      <button class="button" ng-show="file" ng-click='addText()'>Add Text</button>
+      <div class="button" ng-model="file" name="file" ngf-pattern="'image/*'" ngf-accept="'image/*'" ngf-max-size="20MB" ngf-min-height="50" ngf-select="upload($file)" ng-show="!file">{{setImage}}</div>
+      <button class="button" ng-show="canvasStates.index > 0" ng-click='undoCanvas()'>Undo</button>
+      <button class="button" ng-show="canvasStates.index < canvasStates.states.length - 1"ng-click='redoCanvas()'>Redo</button>
+      <button class="button" ng-show="canvasStates.index > -1"ng-click='saveCanvas()'>Save</button>
+    </div>
+  </div>
+</div>
