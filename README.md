@@ -19,6 +19,3 @@ Run the following command which will host the app at localhost port 8080.
 ```
 node server.js
 ```
-
-## Up and Running at
-https://noterious.herokuapp.com
